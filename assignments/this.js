@@ -83,23 +83,19 @@ assign.call(individual3, hobbies)
 // code example for Explicit Binding
 
 function Characteristic(name) {
-    this.person = name;
-    this.height = height;
-    // this.speak = function() {
-    //     console.log(`${this.name} is ${this.height} ${this.says}`)
-    // }
-}
-
-
-const individual5 = {
-    name: 'Elan',
-    height: '6,4 inches',
-    speak: function() {
-        console.log(`${this.name} is ${this.height} tall.`)
+    this.name = name.name;
+    this.height = name.height;
     }
-}
+
+
+
+const individual5 = new Characteristic ({
+    name: 'Elan',
+    height: '6,4',
+    
+})
 
 // const elan = new Characteristic('individual5');
 
-individual5.speak()
+console.log(individual5.name)
 

@@ -61,14 +61,10 @@
 
   function GameObject(gattributes) {
     this.dimensions = gattributes.dimensions;
-    date.call(this, gattributes)
+    this.createdAt = gattributes.createdAt;
    
   }
 
-    function date(dattributes) {
-      this.createdAt = dattributes.createdAt;
-      
-    }
 
 
 
@@ -102,7 +98,7 @@
   });
 
   const swordsman = new Humanoid({
-    createdAt: new Date(date),
+    createdAt: new Date(),
     dimensions: {
       length: 2,
       width: 2,
